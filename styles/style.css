@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.page {
-  min-inline-size: 360px;
-  margin: 0;
-}
 
 p,
 h1,
@@ -25,14 +21,16 @@ figure {
   --bg-color: #f3efec;
   --text-color: #312a4e;
   --accent-color: #ffab6b;
-  --main-font: Raleway;
+  --main-font:"Raleway";
   --accent-font: "STIX Two Text";
 }
 
 .page {
   background-color: var(--bg-color, #f3efec);
   color: var(--text-color, #312a4e);
-  font-family: var(--main-font, Raleway);
+  font-family: var(--main-font, sans-serif);
+  min-inline-size: 360px;
+  margin: 0;
 }
 
 a,
@@ -51,10 +49,10 @@ button:focus {
 }
 
 .heading {
-  font-family: var(--accent-font, "STIX Two Text");
+  font-family: var(--accent-font, serif);
   font-style: normal;
   font-weight: 600;
-  line-height: 90%; /* 108px */
+  line-height: 90%;
   text-align: center;
 }
 
